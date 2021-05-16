@@ -59,7 +59,7 @@
                 android:layout_marginStart="@dimen/margin"
                 android:layout_marginTop="@dimen/margin"
                 android:layout_marginEnd="@dimen/margin"
-                android:text="@string/how_was_hour_sleep"
+                android:text="@{sleepTrackerViewModel.nightsString}"
                 android:textAlignment="center" />
         </ScrollView>
 
@@ -74,6 +74,7 @@
             android:layout_marginStart="@dimen/margin"
             android:background="@drawable/green_rounded_corners"
             android:text="@string/start"
+            android:onClick="@{() -> sleepTrackerViewModel.onStartTracking()}"
             android:textAllCaps="true"
             android:textColor="#FFFFFF"
             app:layout_constraintBaseline_toBaselineOf="@id/stop_button"
@@ -89,6 +90,7 @@
             android:layout_marginTop="@dimen/margin"
             android:layout_marginEnd="@dimen/margin"
             android:text="@string/stop"
+            android:onClick="@{() -> sleepTrackerViewModel.onStopTracking()}"
             android:background="@drawable/red_rounded_corners"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/start_button"
@@ -104,6 +106,7 @@
             android:layout_marginBottom="@dimen/margin"
             android:background="@drawable/orange_rounded_corners"
             android:text="@string/clear"
+            android:onClick="@{() -> sleepTrackerViewModel.onClear()}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
