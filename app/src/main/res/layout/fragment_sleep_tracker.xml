@@ -72,10 +72,14 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="409dp"
-            android:layout_height="601dp"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="65dp" />
+            android:id="@+id/sleep_list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/clear_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stop_button"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
