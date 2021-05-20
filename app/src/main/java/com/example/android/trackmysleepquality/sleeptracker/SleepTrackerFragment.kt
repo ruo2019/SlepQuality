@@ -52,6 +52,10 @@ class SleepTrackerFragment : Fragment() {
             }
         })
 
+        val adapter = SleepNightAdapter()
+
+        binding.sleepList.adapter = adapter
+
         return binding.root
     }
 }
