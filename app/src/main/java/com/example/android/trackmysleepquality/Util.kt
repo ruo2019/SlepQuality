@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat
 import java.util.concurrent.TimeUnit
 import java.util.*
 
-
+private val ONE_SECOND_MILLIS = TimeUnit.MILLISECONDS.convert(1, TimeUnit.SECONDS)
 private val ONE_MINUTE_MILLIS = TimeUnit.MILLISECONDS.convert(1, TimeUnit.MINUTES)
 private val ONE_HOUR_MILLIS = TimeUnit.MILLISECONDS.convert(1, TimeUnit.HOURS)
 
