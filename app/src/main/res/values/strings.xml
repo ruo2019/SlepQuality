@@ -32,6 +32,7 @@
     <string name="five_excellent">Excellent!</string>
 
     <string name="cleared_message">All your data is gone forever.</string>
+    <string name="close">Close</string>
 
     <string name="minutes_length">%d minutes on %s</string>
     <string name="hours_length">%d hours on %s</string>
