@@ -21,7 +21,7 @@
         <action
             android:id="@+id/action_sleep_tracker_fragment_to_sleepDetailFragment"
             app:destination="@id/sleep_detail_fragment"
-            app:enterAnim="@anim/slide_in_bottom"
+            app:enterAnim="@anim/slide_in_top"
             app:exitAnim="@anim/slide_out_top"
             app:popEnterAnim="@anim/slide_out_bottom" />
     </fragment>
@@ -54,6 +54,8 @@
         <action
             android:id="@+id/action_sleepDetailFragment_to_sleep_tracker_fragment"
             app:destination="@id/sleep_tracker_fragment"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_bottom"
             app:launchSingleTop="false"
             app:popUpTo="@+id/sleep_tracker_fragment"
             app:popUpToInclusive="true" />
